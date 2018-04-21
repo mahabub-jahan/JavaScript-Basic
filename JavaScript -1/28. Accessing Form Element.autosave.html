@@ -1,0 +1,21 @@
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Accessing Form</title>
+</head>
+<body>
+<form name="shuvosForm">
+	Username: <input type="text" name="username">
+	Password: <input type="Password" name="Password">
+	<input type="Submit" name="Submit" value="Submit">
+</form>
+
+<script type="text/javascript">
+	/*Work same...
+	var x  = document.shuvosForm.elements[0].name;*/
+	var x  = document.forms[0].elements[0].name;
+	document.write(x);
+
+</script>
+</body>
+</html>

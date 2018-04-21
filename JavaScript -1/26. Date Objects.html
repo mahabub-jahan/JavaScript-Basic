@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date Objects</title>
+</head>
+<body>
+<script type="text/javascript">
+
+/*It's only work for chrome browser*/
+
+/*
+	//print linux every 1 seconds
+	function doSomething() {
+		document.write("Linux");
+	}
+
+	setInterval("doSomething()", 1000);*/
+
+	function printTime() {
+		var now = new Date();
+		var hours = now.getHours();
+		var mins = now.getMinutes();
+		var seconds = now.getSeconds();
+		document.write(hours + ":" + mins + ":" + seconds + "<br>");
+	}
+
+	setInterval("printTime()", 1000);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating Own Object</title>
+	<script type="text/javascript">
+		//constructor function
+		function person(name, age){
+			this.name = name;
+			this.age = age;
+			this.live = yearsLeft;
+		}
+
+		function yearsLeft(){
+			var numYears = 70 - this.age;
+			return numYears;
+		}
+
+		var shuvo = new person("Mahabub Jahan", 23);
+		
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+	document.write(shuvo.live());
+	
+</script>
+</body>
+</html>

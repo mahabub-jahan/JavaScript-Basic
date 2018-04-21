@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Form</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function validator(){
+		if (document.shuvosForm.thebox.checked) {
+			alert("Yes its checked");
+		} else {
+			alert("No its not checked");
+		}
+	} 
+</script>
+
+
+<form name="shuvosForm">
+	<input type="checkbox" name="thebox">
+	<input type="button" name="button" value="Press Me" onclick="validator()">
+</form>
+</body>
+</html>
